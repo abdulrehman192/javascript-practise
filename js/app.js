@@ -119,3 +119,109 @@ if (!true) {
 } else {
     console.log(true);
 }
+
+// series of if else statement
+
+let marks = prompt("Enter Your Marks");
+console.log(marks);
+
+if(marks >= 50 && marks <=60)
+{
+    alert("You got C Grade");
+}
+else if(marks > 60 && marks <= 70)
+{
+    alert("You got B Grade");
+}
+else if (marks > 70 && marks <= 80)
+{
+    alert("You got A Grade");
+}
+else if(marks > 80)
+{
+    alert("You got A+ Grade");
+}
+else
+{
+    alert("Sorry You are failed");
+}
+
+//nested if else
+
+let g = 45, h = 50,j = 30;
+
+if(h > g) //outer if
+{
+    if(h > j) //inner if
+    {
+        console.log('h is greater than j');
+    }
+    else //inner else
+    {
+        console.log('j is greated than h');
+    }
+}
+else //outer else
+{
+    console.log('h is smaller than g');
+}
+
+let eng = prompt("Enter Your English Marks Here");
+console.log(eng);
+eng = Number(eng);
+switch(eng)
+{
+    case 50 :
+        console.log("You Obtain C Grade in English");
+        break;
+    case 60:
+        console.log("You Obtain 60 Marks in English");
+        break;
+    case 70:
+        console.log("You Obtain 70 Marks in English");
+        break;
+    case 80:
+        console.log("You Obtain 80 Marks in English");
+        break;
+    default:
+        console.log("Invalide Input Value");
+        break;
+}
+
+let table = prompt("Enter the number for table");
+for(let i = 1; i <= 10; i++)
+{
+    console.log(table + " * "+ i + " = "+ table * i);
+}
+
+console.log("While Loop")
+
+let i = 1;
+while(i <= 20)
+{
+    console.log(table + " * "+ i + " = "+ table * i);
+    i++;
+}
+
+console.log("Do-While Loop");
+
+do
+{
+    console.log(table + " * "+ i + " = "+ table * i);
+    i++;
+}while(i<=10)
+
+console.log("For-in Loop");
+
+let names = ['Ali','Ahmad','Zain','Hassan','Hussain'];
+
+
+for(let w in names)
+{
+    console.log(names[w]);
+}
+
+for(let i = 0; i<names.length; i++)
+{
+    console.log(names[i]);
+}
