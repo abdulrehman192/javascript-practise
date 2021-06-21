@@ -131,3 +131,9 @@ Person.Name = "Hassan";
 let h = Student;
 console.log(h);
 
+let date = new Date();
+let hrs = date.getHours();
+let day = date.getDay();
+console.log(day);
+
+
